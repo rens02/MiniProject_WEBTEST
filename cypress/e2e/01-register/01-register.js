@@ -1,7 +1,7 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
 //Barengan
 And("I input my password", () =>{
-    const password = Cypress.env('password')
+    const password = Cypress.env('pass')
     cy.get("#input-24").type(password);
 });
 Then("I am on the login page", () =>{
