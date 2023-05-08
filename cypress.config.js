@@ -4,7 +4,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   env:{
     fname:"Andre Simatupang",
-    regEmail:"diandre12ssszxc3@mail.com",
+    regEmail:"TESTINGAWAWKAWOK@mail.com",
     pass: "andreas123",
   },
   projectId: 'gnymed',
