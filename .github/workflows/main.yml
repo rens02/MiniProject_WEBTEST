@@ -3,14 +3,13 @@ name: Cypress Tests
 on: push
 
 jobs:
-  cypress-run:
+  npx cypress run --record --key 17ab3a4e-3204-471a-abaa-d6ec11f3e87c:
     runs-on: ubuntu-22.04
+    browser: chrome
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: npx cypress run --record --key 17ab3a4e-3204-471a-abaa-d6ec11f3e87c
+      - name: 
         uses: cypress-io/github-action@v5
         with:
-          browser: chrome
+          
