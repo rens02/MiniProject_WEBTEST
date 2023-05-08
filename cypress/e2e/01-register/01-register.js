@@ -5,7 +5,7 @@ And("I input my password", () =>{
     cy.get("#input-24").type(password);
 });
 Then("I am on the login page", () =>{
-    cy.get(".v-card__title").should('contain', 'Login')
+    cy.url().should('eq', 'https://alta-shop.vercel.app/auth/login')
 });
 Then("I am get an error", () =>{
     // cy.get(".v-card__title").should('contain', 'Login')
