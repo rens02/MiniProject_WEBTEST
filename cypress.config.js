@@ -4,9 +4,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   env:{
     fname:"Andre Simatupang",
-    regEmail:"diandre123@mail.com",
+    regEmail:"diandre12ssszxc3@mail.com",
     pass: "andreas123",
   },
+  projectId: 'gnymed',
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
