@@ -1,9 +1,8 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
-Then("I am get an error", () =>{
-
+Then("i am get an error", () =>{
     cy.get('.v-alert').should('be.visible')
-    console.log("Berhasil4")
 });
+
 And("I click login", () =>{
     cy.get('.text-center > .v-btn').click();
 });
@@ -18,7 +17,7 @@ When("i input my registered email", () =>{
 });
 
 And("i input my registered password", () =>{
-    const password = Cypress.env('password')
+    const password = Cypress.env('pass')
     cy.get("#input-21").type(password);
 });
 
@@ -33,7 +32,7 @@ When("i didnt input anything", () =>{
     cy.log("did nothing")
 });
 // LG05
-And("I input wrong password", () =>{
+And("i input wrong password", () =>{
     cy.get("#input-21").type("aneh");
 });
 
